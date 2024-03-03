@@ -29,6 +29,7 @@ theme:
 nav:
   - 'Introduction': index.md
   - 'Prior Knowlegde': prior_knowledge.md
+  - 'Deeper Knowledge': deeper_knowledge.md
   - 'Common Questions': common_questions.md
   - 'Common Errors': common_errors.md
 
@@ -46,6 +47,8 @@ markdown_extensions:
   - pymdownx.superfences
   - tables
   - attr_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 # Extras
 extra:
