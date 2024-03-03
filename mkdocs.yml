@@ -8,7 +8,7 @@ repo_url: https://github.com/akchonya/aiogram-3-faq
 
 
 theme:
-  # favicon: images/favicon.png
+  favicon: images/favicon.ico
   name: material
   
   palette:

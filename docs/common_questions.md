@@ -6,7 +6,7 @@ Aiogram 2.x is essentially outdated at this point. While it can still be used, i
 
 ## Where should I start from?
 
-Try the [Simple Usage](https://docs.aiogram.dev/en/latest/#simple-usage) example from documentation.
+Try the [Simple Usage](https://docs.aiogram.dev/en/latest/#simple-usage) example from the documentation.
 
 ## Can my bot use premium emojis?
 
