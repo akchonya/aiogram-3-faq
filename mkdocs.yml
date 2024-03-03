@@ -1,8 +1,6 @@
 # Project information
 site_name: Aiogram 3 FAQ
 site_url: https://akchonya.github.io/aiogram-3-faq
-docs_dir: docs
-site_dir: site
 
 # Repository
 repo_name: akchonya/aiogram-3-faq
