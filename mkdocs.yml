@@ -54,7 +54,7 @@ markdown_extensions:
 extra:
   social:
     - icon: fontawesome/brands/telegram
-      link: https://t.me/FleshkaXDude
+      link: https://t.me/aiofaqbot
       name: Telegram
     - icon: fontawesome/brands/github
       link: https://github.com/akchonya
