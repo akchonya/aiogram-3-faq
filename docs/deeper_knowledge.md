@@ -2,6 +2,13 @@
 
 If you have no problems with python and understanding examples from documentation, there is a chance that you are thinking about more complex projects. There are some useful things, that you might need.
 
+## Templates
+
+Aiogram 3 is well-structured for modularization. There are some community templates available for you to explore, which can help you understand its architecture.
+
+[`Latand/tgbot_template_v3`](https://github.com/Latand/tgbot_template_v3)
+[`wakaree/aiogram_bot_template`](https://github.com/wakaree/aiogram_bot_template)
+
 ## Databases
 
 If you are planning to make somewhat complex bots you would most definitely use databases. There is also a [CS50SQL](https://cs50.harvard.edu/sql/2024/) course that teaches basic of SQL language. They mostly use SQLite to grasp the basics, but it's not recommended to use it with telegram bots (as any file database can be locked while working with async requests).
