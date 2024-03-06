@@ -1,6 +1,6 @@
 # Aiogram 3 FAQ
 
-![aiofaqbot](https://i.imgur.com/ondEuRz.jpeg)
+![aiofaqbot](https://i.imgur.com/OakFVWQ.jpeg)
 
 If you are just starting your [aiogram](https://github.com/aiogram/aiogram/tree/dev-3.x) journey, this webpage will help you deal with common issues.
 
