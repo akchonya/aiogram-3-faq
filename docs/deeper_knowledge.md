@@ -23,6 +23,10 @@ If you are planning to have scheduled or intervaled tasks you should look into [
 
 There is a lot of data in bots' memory storage that could be lost after restarting. To prevent it you should use [Redis](https://redis.io/).
 
+## ngrok
+
+If you are trying to localhost an aiogram bot using webhooks you definetely need to use [ngrok](https://ngrok.com/) to get the webhook link.
+
 ## i18n
 
 If you want to have several localizations and don't know how implement that - use [aiogram i18n](https://github.com/aiogram/i18n) library.
