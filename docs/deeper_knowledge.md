@@ -12,9 +12,9 @@ Here is one of the simplest structures for your first project. Most of the modul
 |   ├── handlers/
 |   ├── keyboards/
 |   ├── middlewares/
-|   ├── utils/
+|   └── utils/
 |   .env
-|   main.py
+└── main.py
 ```
 
 There are some more complex community templates available for you to explore.
