@@ -4,7 +4,20 @@ If you have no problems with python and understanding examples from documentatio
 
 ## Templates
 
-Aiogram 3 is well-structured for modularization. There are some community templates available for you to explore, which can help you understand its architecture.
+Here is one of the simplest structures for your first project. Most of the module names are self-explanatory. I would suggest putting configuration settings in the `utils` module, along with any additional helper files.
+
+```.
+├── bot/
+|   ├── filters/
+|   ├── handlers/
+|   ├── keyboards/
+|   ├── middlewares/
+|   ├── utils/
+|   .env
+|   main.py
+```
+
+There are some more complex community templates available for you to explore.
 
 [`Latand/tgbot_template_v3`](https://github.com/Latand/tgbot_template_v3)
 [`wakaree/aiogram_bot_template`](https://github.com/wakaree/aiogram_bot_template)
