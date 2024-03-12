@@ -15,3 +15,5 @@ Yes, but it [requires buying a custom Fragment username](https://stackoverflow.c
 ## Can two of my bots communicate?
 
 Short answer is [no](https://core.telegram.org/bots/faq#why-doesn-39t-my-bot-see-messages-from-other-bots).
+
+However, you can establish their communication through third-party software, as they cannot directly see each other's messages on Telegram.
