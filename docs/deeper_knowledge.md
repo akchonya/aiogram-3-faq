@@ -46,4 +46,9 @@ If you want to have several localizations and don't know how implement that - us
 
 ## Deploying
 
-If you are ready to show off your bot you would need to host it somewhere. There are a lot of [affordable hostings](https://t.me/about_aiogram/12) that you can choose from. To make the deployment as smooth as possible you'd better be familiar with [Docker](https://www.docker.com/) and [Git](https://git-scm.com/) (with, for example, [GitHub](https://github.com/)).
+If you are ready to show off your bot you would need to host it somewhere. There are a lot of [affordable hostings](https://t.me/about_aiogram/12) that you can choose from.
+
+!!! Tip "My experience"
+    I have personally been using [MVPS.net](https://www.mvps.net/) and have no complaints. However,  it's important to understand the basics of SSH protocol usage.
+
+To make the deployment as smooth as possible you'd better be familiar with [Docker](https://www.docker.com/) and [Git](https://git-scm.com/) (with, for example, [GitHub](https://github.com/)).
