@@ -59,3 +59,40 @@ ERROR: Could not build wheels for aiohttp, which is required to install pyprojec
 Chances are that you are using python 3.12 with an older version of aiogram 3.x.
 
 You can either install python 3.11 or the most recent aiogram.
+
+## Deprecation Warning
+
+```python
+DeprecationWarning: Passing parse_mode, disable_web_page_preview or protect_content to Bot initializer is deprecated. This arguments will be removed in 3.7.0 version
+Use default=DefaultBotProperties(...) instead.
+  bot = Bot(TOKEN, parse_mode=ParseMode.HTML)
+```
+
+!!! info "That's not an error *yet*"
+    That's a warning concerning future updates. You still can use `parse_mode=ParseMode.HTML` in the current aiogram 3.4 version. However, it will be removed in the future.
+
+That's what you should use now:
+
+```python
+from aiogram.client.default import DefaultBotProperties
+...
+
+bot = Bot(
+  token=BOT_TOKEN,
+  default=DefaultBotProperties(parse_mode=ParseMode.HTML),
+    )
+```
+
+[DefaultBotProperties](https://github.com/aiogram/aiogram/blob/dev-3.x/aiogram/client/default.py) contains more properties than just a parse mode, including:
+
+```
+- parse_mode
+- disable_notification
+- protect_content
+- allow_sending_without_reply
+- link_preview
+- link_preview_is_disabled
+- link_preview_prefer_small_media
+- link_preview_prefer_large_media
+- link_preview_show_above_text
+```
