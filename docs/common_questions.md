@@ -27,7 +27,7 @@ from aiogram import html
 
 ...
 
-await message.answer(html.pre_language("your_code", "python"))
+await message.answer(html.pre_language(value="your_code", language="language_name"))
 ```
 
 In case of working with Markdown you have to use the following code:
@@ -37,5 +37,9 @@ from aiogram import md
 
 ...
 
-await message.answer(md.pre_language("your_code", "python"))
+await message.answer(md.pre_language(value="your_code", language="language_name"))
 ```
+
+**Output:**
+
+![codeblock_output](images/codeblock.webp)
