@@ -13,7 +13,7 @@ ImportError: cannot import name 'executor' from 'aiogram.utils' (/usr/local/lib/
 
 This is the most popular example. Previously, aiogram used `executor` to manage all of the execution proccesses. However, in aiogram 3.x, it's integrated into the dispatcher. As a result, even the simplest 2.x example wouldn't work on aiogram 3.x.
 
-![what_am_i_supposed_to_do_then](https://i.imgur.com/MkWiqig.png)
+![what_am_i_supposed_to_do_then](images/migration.webp)
 
 1. Drop your outdated tutorial. If you are just learning aiogram [you shouldn't start with unsupported versions](https://akchonya.github.io/aiogram-3-faq/common_questions/#which-aiogram-version-should-i-use).
 2. Make your [first steps](https://akchonya.github.io/aiogram-3-faq/common_questions/#where-should-i-start-from) into aiogram 3.
@@ -85,7 +85,7 @@ bot = Bot(
 
 [DefaultBotProperties](https://github.com/aiogram/aiogram/blob/dev-3.x/aiogram/client/default.py) contains more properties than just a parse mode, including:
 
-```
+```text
 - parse_mode
 - disable_notification
 - protect_content
