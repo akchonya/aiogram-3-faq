@@ -17,3 +17,25 @@ Yes, but it [requires buying a custom Fragment username](https://stackoverflow.c
 Short answer is [no](https://core.telegram.org/bots/faq#why-doesn-39t-my-bot-see-messages-from-other-bots).
 
 However, you can establish their communication through third-party software, as they cannot directly see each other's messages on Telegram.
+
+## How can I send code blocks?
+
+If you use HTML parse mode, you can use an in-built shortcut:
+
+```python
+from aiogram import html
+
+...
+
+await message.answer(html.pre_language("your_code", "python"))
+```
+
+In case of working with Markdown you have to use the following code:
+
+```python
+from aiogram import md
+
+...
+
+await message.answer(md.pre_language("your_code", "python"))
+```
