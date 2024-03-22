@@ -19,7 +19,7 @@ This is the most popular example. Previously, aiogram used `executor` to manage 
 2. Make your [first steps](https://akchonya.github.io/aiogram-3-faq/common_questions/#where-should-i-start-from) into aiogram 3.
 
 !!! info "Another option"
-    Yes, you *can* downgrade your aiogram to 2.x via `pip install aiogram==2.25.2`, but do you really *want* to start learning the outdated and upsupported version?
+    Yes, you *can* downgrade your aiogram to 2.x via `pip install aiogram==2.25.2`, but do you really *want* to start learning the outdated and unsupported version?
 
 ## Python versions related errors
 
