@@ -9,3 +9,5 @@ I've been trying to gather and structure some of the most frequently asked quest
     Please note that this article is not an official publication. It was written by an aiogram enthusiast, who is not affiliated with the creators of Aiogram.
 
 Feel free to explore the sections below to find answers to your questions. And if you can't find what you're looking for or have suggestions for improving this FAQ, don't hesitate to reach out.
+
+!!! tip "Thanks for your [github](https://github.com/akchonya/aiogram-3-faq) stars!"
