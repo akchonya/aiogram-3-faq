@@ -43,3 +43,17 @@ await message.answer(md.pre_language(value="your_code", language="language_name"
 **Output:**
 
 ![codeblock_output](images/codeblock.webp)
+
+## Can my bot process messages received while it was offline?
+
+As the [Telegram Bot API documentation](https://core.telegram.org/bots/api#getting-updates) states:
+
+> There are two mutually exclusive ways of receiving updates for your bot - the getUpdates method on one hand and webhooks on the other. Incoming updates are stored on the server until the bot receives them either way, but they will not be kept longer than 24 hours.
+
+In case of working with polling you can call the `getUpdates()` (for example, use can add `await bot.get_updates()` in the startup function) method to retrieve all the missed messages.
+
+If you have a webhook - configure it while setting up:
+
+```python
+await bot.set_webhook(..., drop_pending_updates=False)
+```
