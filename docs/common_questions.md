@@ -44,7 +44,7 @@ await message.answer(md.pre_language(value="your_code", language="language_name"
 
 ![codeblock_output](images/codeblock.webp)
 
-## Can my bot process messages received while it was offline?
+## Can my bot handle offline messages?
 
 As the [Telegram Bot API documentation](https://core.telegram.org/bots/api#getting-updates) states:
 
