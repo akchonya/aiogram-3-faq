@@ -38,7 +38,7 @@ There is a lot of data in bots' memory storage that could be lost after restarti
 
 ## ngrok
 
-If you are trying to localhost an aiogram bot using webhooks you definetely need to use [ngrok](https://ngrok.com/) to get the webhook link.
+If you are trying to localhost an aiogram bot using webhooks you definitely need to use [ngrok](https://ngrok.com/) to get the webhook link.
 
 ## i18n
 
