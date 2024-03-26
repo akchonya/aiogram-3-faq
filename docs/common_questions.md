@@ -20,7 +20,7 @@ However, you can establish their communication through third-party software, as 
 
 ## Text formatting
 
-There are different ways to format your text. You can either use plain [markdown](https://core.telegram.org/bots/api#markdownv2-style)/[html](https://core.telegram.org/bots/api#html-style) syntax in your messages, or use aiogram's in-built methods. I reccomend the second option, because it is more reliable, as it unparses your strings before applying styles.
+There are different ways to format your text. You can either use plain [markdown](https://core.telegram.org/bots/api#markdownv2-style)/[html](https://core.telegram.org/bots/api#html-style) syntax in your messages, or use aiogram's in-built methods. I recommend the second option, because it is more reliable, as it unparses your strings before applying styles.
 
 You need to import the desired module using:
 
