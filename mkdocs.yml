@@ -23,6 +23,9 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
       primary: blue grey
+
+  icon:
+    logo: material/book-cog
     
 
 # Navigation
