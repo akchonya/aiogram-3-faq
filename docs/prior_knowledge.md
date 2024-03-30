@@ -1,5 +1,7 @@
 # Prior Knowledge
 
+## Why doesn't my code work??
+
 Many errors occur when people with no prior Python experience attempt to write their first project.
 
 ```python
@@ -43,4 +45,5 @@ If you're convinced your issue is unique and hasn't been addressed before, pleas
 
 Choose an appropriate chat topic and provide a [MRE](https://en.wikipedia.org/wiki/Minimal_reproducible_example#:~:text=In%20computing%2C%20a%20minimal%20reproducible,to%20be%20demonstrated%20and%20reproduced.) along with your error traceback or an explanation of unwanted behaviour.
 
-Please remember to be polite to those who are assisting you. It's not advisable to send private messages asking about your errors or providing your entire code for review. Those people usually get tons of messages like that and simply have no time to answer them. Instead, communicate through the chat or consider purchasing a private consultation if available.
+!!! note "Just a quick reminder"
+    Please remember to be polite to those who are assisting you. **It's not advisable to send private messages** asking about your errors or providing your entire code for review. Those people usually get tons of messages like that and simply have no time to answer them. Instead, **communicate through the chat** or **consider purchasing a private consultation** if available.
