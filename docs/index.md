@@ -6,7 +6,7 @@ I've been trying to gather and structure some of the most frequently asked quest
 
 !!! note
 
-    Please note that this article is not an official publication. It was written by an aiogram enthusiast, who is not affiliated with the creators of Aiogram.
+    Please note that this article is not an official publication. It was written by an aiogram enthusiast, who is not affiliated with the creator of Aiogram.
 
 Feel free to explore the sections below to find answers to your questions. And if you can't find what you're looking for or have suggestions for improving this FAQ, don't hesitate to reach out.
 
