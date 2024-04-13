@@ -92,4 +92,4 @@ Aiogram developers are currently working on updating compatibility, and you can 
 
 ## How can I handle media groups/albums?
 
-Aiogram doesn't have an in-built methods for it, but you can use [aiogram_album](https://github.com/RootShinobi/aiogram_album) utility by an active aiogram community member.
+Aiogram doesn't have in-built methods for it, but you can use [aiogram_album](https://github.com/RootShinobi/aiogram_album) utility by an active aiogram community member.
