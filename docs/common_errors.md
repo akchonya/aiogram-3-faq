@@ -96,3 +96,32 @@ bot = Bot(
 - link_preview_prefer_large_media
 - link_preview_show_above_text
 ```
+
+## Bad Request: can't parse entities
+
+!!! tip "If you have no idea what that formatting means.."
+    Check out [infomation about text formatting in aiogram](https://akchonya.github.io/aiogram-3-faq/common_questions/#text-formatting).
+
+If you are getting the following error:
+
+```txt
+exception=TelegramBadRequest('Telegram server says - Bad Request: can't parse entities: Unsupported start tag "<1;</code" at byte offset 59')>
+```
+
+chances are that your text contains special characters, that cannot be parsed (for example, "<" or ">" in html parse mode).
+
+If your code looks something like that `html.bold(user_fullname)` you should change it to `html.bold(html.unparse(your_text))`.
+
+!!! note "There is another way"
+    You can use aiogram formatting classes directly instead of using the unparse method. In that case your code will look a bit different (arguably more complex).
+
+```python
+from aiogram.utils.formatting import Bold
+
+@router.message(Command("bold"))
+async def test_command(message: Message):
+    bold = Bold(your_text)
+    await message.answer(**bold.as_kwargs())
+```
+
+<sub>*example by* [Avazart](https://t.me/Avazart)</sub>

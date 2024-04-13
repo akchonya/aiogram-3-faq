@@ -36,32 +36,6 @@ from aiogram import md
 
 All of the methods available you can check [here](https://github.com/aiogram/aiogram/blob/acf52f468cae79b3511c2939cf39a801fa47f9f3/aiogram/utils/text_decorations.py#L127-L173).
 
-### Bad Request: can't parse entities
-
-If you are gettin the following error:
-
-```txt
-exception=TelegramBadRequest('Telegram server says - Bad Request: can't parse entities: Unsupported start tag "<1;</code" at byte offset 59')>
-```
-
-chances are that your text contains special characters, that cannot be parsed (for example, "<" or ">" in html parse mode).
-
-If your code looks something like that `html.bold(user_fullname)` you should change it to `html.bold(html.unparse(your_text))`.
-
-!!! note "There is another way"
-    You can use aiogram formatting classes directly instead of using the unparse method. In that case your code will look a bit different (arguably more complex).
-
-```python
-from aiogram.utils.formatting import Bold
-
-@router.message(Command("bold"))
-async def test_command(message: Message):
-    bold = Bold(your_text)
-    await message.answer(**bold.as_kwargs())
-```
-
-<sub>*example by* [Avazart](https://t.me/Avazart)</sub>
-
 ### How can I send code blocks?
 
 If you use HTML parse mode:
