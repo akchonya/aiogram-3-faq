@@ -89,3 +89,7 @@ Aiogram developers are currently working on updating compatibility, and you can 
 !!! warning "Keep in mind that this update is not yet fully released"
     If you're comfortable with Git and have a good understanding of the aiogram source code, you can try it out. Bonus points for finding and fixing bugs.
     However, if this sounds unfamiliar to you, it's best to wait for the official release.
+
+## How can I handle media groups/albums?
+
+Aiogram doesn't have an in-built methods for it, but you can use [aiogram_album](https://github.com/RootShinobi/aiogram_album) utility by an active aiogram community member.
