@@ -110,7 +110,7 @@ exception=TelegramBadRequest('Telegram server says - Bad Request: can't parse en
 
 chances are that your text contains special characters, that cannot be parsed (for example, "<" or ">" in html parse mode).
 
-If your code looks something like that `html.bold(user_fullname)` you should change it to `html.bold(html.unparse(your_text))`.
+If your code looks something like that `html.bold(your_text)` you should change it to `html.bold(html.unparse(your_text))`.
 
 !!! note "There is another way"
     You can use aiogram formatting classes directly instead of using the unparse method. In that case your code will look a bit different (arguably more complex).
@@ -119,7 +119,7 @@ If your code looks something like that `html.bold(user_fullname)` you should cha
 from aiogram.utils.formatting import Bold
 
 @router.message(Command("bold"))
-async def test_command(message: Message):
+async def bold_command(message: Message):
     bold = Bold(your_text)
     await message.answer(**bold.as_kwargs())
 ```
