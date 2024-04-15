@@ -125,3 +125,33 @@ async def bold_command(message: Message):
 ```
 
 <sub>*example by* [Avazart](https://t.me/Avazart)</sub>
+
+## Multiple values for argument 'bot'
+
+Let's check out the easiest router example:
+
+```python
+@router.message(Command("test"))
+async def test_handler(bot: Bot):
+    print("I'm in the test handler")
+```
+
+Looks fine (at least at the first glance), but there is an error:
+
+```python
+TypeError: test_handler() got multiple values for argument 'bot'
+```
+
+**So, what's the problem?** Positional argument.
+
+You must always take `message` as the first argument.
+
+```python
+@router.message(Command("test"))
+async def test_handler(message: Message, bot: Bot):
+    print("I'm in the test handler")
+```
+
+**What if I don't need `message`, I just want to use `bot.<something>`?** It doesn't matter. The first one must always be `message`.
+
+**ChatGPT says to use `message.bot` if I don't want to have unused arguments, is it OK?** Nope, it's not advised to use `<event>.bot` as it's can be not accessible.
