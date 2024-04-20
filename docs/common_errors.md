@@ -56,9 +56,9 @@ Failed to build aiohttp
 ERROR: Could not build wheels for aiohttp, which is required to install pyproject.toml-based projects
 ```
 
-Chances are that you are using python 3.12 with an older version of aiogram 3.x.
+Chances are that you are using python 3.12 with an older version of aiogram.
 
-You can either install python 3.11 or the most recent aiogram.
+**Solution:** you can either *install python 3.11* or the most recent aiogram.
 
 ## Deprecation Warning
 
