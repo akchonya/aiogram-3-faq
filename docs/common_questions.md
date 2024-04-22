@@ -82,7 +82,7 @@ dp = Dispatcher(fsm_strategy=FSMStrategy.CHAT)
 
 ## Does aiogram support Telegram Bot API 7.2?
 
-**upd.** yes
+**upd.** [yes](https://t.me/aiogram_live/105)
 
 ## How can I handle media groups/albums?
 
