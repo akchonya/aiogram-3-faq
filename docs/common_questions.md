@@ -82,13 +82,7 @@ dp = Dispatcher(fsm_strategy=FSMStrategy.CHAT)
 
 ## Does aiogram support Telegram Bot API 7.2?
 
-The [7.2 update](https://core.telegram.org/bots/api#march-31-2024) introduced integration with business accounts but also caused issues with sticker packs.
-
-Aiogram developers are currently working on updating compatibility, and you can already test a [GitHub draft](https://github.com/aiogram/aiogram/tree/feature/bot-api-7.2) with basic support for Bot API 7.2.
-
-!!! warning "Keep in mind that this update is not yet fully released"
-    If you're comfortable with Git and have a good understanding of the aiogram source code, you can try it out. Bonus points for finding and fixing bugs.
-    However, if this sounds unfamiliar to you, it's best to wait for the official release.
+**upd.** yes
 
 ## How can I handle media groups/albums?
 
