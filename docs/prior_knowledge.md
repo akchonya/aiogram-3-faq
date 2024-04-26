@@ -18,6 +18,11 @@ Aiogram is a highly specialized library that involves complex concepts, making i
 
 ## What do I absolutely need to know?
 
+- [x] - absolutely necessary
+- [ ] - would be a **great** addition
+
+---
+
 - [x] variables
 - [x] functions
 - [x] conditionals

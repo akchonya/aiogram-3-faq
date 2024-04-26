@@ -10,7 +10,7 @@ Try the [Simple Usage](https://docs.aiogram.dev/en/latest/#simple-usage) example
 
 ## Can my bot use premium emojis?
 
-Yes, but it [requires buying a custom Fragment username](https://fragment.com/my/assets) for 1000 TON ($5.6k at the time of the acticle's last update).
+Yes, but it [requires buying a custom Fragment username](https://fragment.com/my/assets) for 1000 TON ($5.6k at the time of the acticle's last updateo).
 
 ![fragment](images/fragment.webp)
 
