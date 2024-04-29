@@ -38,6 +38,16 @@ from aiogram import md
 
 All of the methods available you can check [here](https://github.com/aiogram/aiogram/blob/acf52f468cae79b3511c2939cf39a801fa47f9f3/aiogram/utils/text_decorations.py#L127-L173).
 
+---
+
+**Can I use [HTML](https://core.telegram.org/bots/api#html-style) or [Markdown](https://core.telegram.org/bots/api#markdownv2-style) directly?** Yes, you can.
+
+**Why do we have two Markdowns there and what should I use then?** Because there is a [legacy Markdown version](https://core.telegram.org/bots/api#markdown-style) without some of the available features. In most cases you will need to use [MarkdownV2](https://core.telegram.org/bots/api#markdownv2-style).
+
+**HTML or Markdown?** Sometimes Markdown acts weird with Telegram Bot API, so I would suggest choosing HTML if you don't have an urgent need to use Markdown.
+
+---
+
 ### How can I send code blocks?
 
 If you use HTML parse mode:
