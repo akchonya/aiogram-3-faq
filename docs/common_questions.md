@@ -92,6 +92,8 @@ from aiogram.fsm.strategy import FSMStrategy
 dp = Dispatcher(fsm_strategy=FSMStrategy.CHAT)
 ```
 
+**What if I want to have both private states and group states?** You can use [Redis](https://akchonya.github.io/aiogram-3-faq/deeper_knowledge/#redis) to store any kind of states you want.
+
 ## Does aiogram support Telegram Bot API 7.2?
 
 **upd.** [yes](https://t.me/aiogram_live/105)
