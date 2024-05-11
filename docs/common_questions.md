@@ -48,7 +48,7 @@ All of the methods available you can check [here](https://github.com/aiogram/aio
 
 ---
 
-### How can I send code blocks?
+### How can I send code blocks via bot?
 
 If you use HTML parse mode:
 
@@ -65,6 +65,32 @@ await message.answer(md.pre_language(value="your_code", language="language_name"
 **Output:**
 
 ![codeblock_output](images/codeblock.webp)
+
+### How can I send code blocks manually?
+
+```txt
+    ```language_name
+    your_code = here
+    ```
+```
+
+**Example input:**
+
+```txt
+    ```python
+    async def on_startup(bot: Bot) -> None:
+        await set_commands(bot)
+        await bot.set_webhook(
+            f"{BASE_WEBHOOK_URL}{WEBHOOK_PATH}",
+            secret_token=WEBHOOK_SECRET,
+            allowed_updates=["message", "callback_query"],
+        )
+    ```
+```
+
+**Example output:**
+
+![codeblock_output](images/codeblock_manual.webp)
 
 ## Can my bot handle offline messages?
 
