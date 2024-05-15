@@ -56,7 +56,7 @@ All of the methods available you can check [here](https://github.com/aiogram/aio
 
 ---
 
-### Can I skip unsupported tags?
+### Formatting OpenAI Output for Bots?
 
 If you are trying to convert OpenAI generated text you can check out [chatgpt-md-converter](https://pypi.org/project/chatgpt-md-converter/) by an active community member [Latand](https://github.com/Latand).
 
