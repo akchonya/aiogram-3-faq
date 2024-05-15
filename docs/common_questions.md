@@ -4,9 +4,13 @@
 
 Aiogram 2.x is essentially outdated at this point. While it can still be used, it lacks support for the latest TelegramBotApi versions. Understanding Aiogram 2.x may be necessary to maintain older projects, but aside from that, there's little reason to begin learning it now. It's advisable to start with the most recent version.
 
+---
+
 ## Where should I start from?
 
 Try the [Simple Usage](https://docs.aiogram.dev/en/latest/#simple-usage) example from the documentation.
+
+---
 
 ## Can my bot use premium emojis?
 
@@ -14,11 +18,15 @@ Yes, but it [requires buying a custom Fragment username](https://fragment.com/my
 
 ![fragment](images/fragment.webp)
 
+---
+
 ## Can two of my bots communicate?
 
 Short answer is [no](https://core.telegram.org/bots/faq#why-doesn-39t-my-bot-see-messages-from-other-bots).
 
 However, you can establish their communication through third-party software, as they cannot directly see each other's messages on Telegram.
+
+---
 
 ## Text formatting
 
@@ -48,6 +56,29 @@ All of the methods available you can check [here](https://github.com/aiogram/aio
 
 ---
 
+### Can I skip unsupported tags?
+
+If you are trying to convert OpenAI generated text you can check out [chatgpt-md-converter](https://pypi.org/project/chatgpt-md-converter/) by an active community member [Latand](https://github.com/Latand).
+
+**Installation:**
+
+```sh
+pip install chatgpt-md-converter
+```
+
+**Usage example from the [Latand's tg channel](https://t.me/botfatherdev):**
+
+```python
+from chatgpt_md_converter import telegram_format
+
+formatted_text = telegram_format("Here is some **bold**, __underline__, and `inline code`.\n```python\nprint('Hello, world!')\n")
+
+print(formatted_text)
+
+```
+
+---
+
 ### How can I send code blocks via bot?
 
 If you use HTML parse mode:
@@ -65,6 +96,8 @@ await message.answer(md.pre_language(value="your_code", language="language_name"
 **Output:**
 
 ![codeblock_output](images/codeblock.webp)
+
+---
 
 ### How can I send code blocks manually?
 
@@ -92,6 +125,8 @@ await message.answer(md.pre_language(value="your_code", language="language_name"
 
 ![codeblock_output](images/codeblock_manual.webp)
 
+---
+
 ## Can my bot handle offline messages?
 
 As the [Telegram Bot API documentation](https://core.telegram.org/bots/api#getting-updates) states:
@@ -105,6 +140,8 @@ If you have a webhook - configure it while setting up:
 ```python
 await bot.set_webhook(..., drop_pending_updates=False)
 ```
+
+---
 
 ## Can my bot set FSM states for a group?
 
@@ -120,9 +157,13 @@ dp = Dispatcher(fsm_strategy=FSMStrategy.CHAT)
 
 **What if I want to have both private states and group states?** You can use [Storages](https://docs.aiogram.dev/en/latest/dispatcher/finite_state_machine/storages.html) to store any kind of custom states you want.
 
+---
+
 ## Does aiogram support Telegram Bot API 7.2?
 
 **upd.** [yes](https://t.me/aiogram_live/105)
+
+---
 
 ## How can I handle media groups/albums?
 
