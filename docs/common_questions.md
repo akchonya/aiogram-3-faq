@@ -26,6 +26,30 @@ Short answer is [no](https://core.telegram.org/bots/faq#why-doesn-39t-my-bot-see
 
 However, you can establish their communication through third-party software, as they cannot directly see each other's messages on Telegram.
 
+Another simple (but maybe not the most elegant way) is to create a junk-channel (it can be private) and handle channel posts. Both bots have to be admins in the channel.
+
+**Bot A example:**
+
+```python
+@router.message(Command("send"))
+async def send_handler(message: Message, bot: Bot):
+    await bot.send_message(CHANNEL_ID, "A message via [Bot A]")
+```
+
+**Bot B example:**
+
+```python
+@router.channel_post()
+async def post_handler(channel_post: Message):
+    print(f"[Bot B] got the messsage: {channel_post.text}")
+```
+
+**Output:**
+
+```txt
+[Bot B] got the messsage: A message via [Bot A]
+```
+
 ---
 
 ## Text formatting
