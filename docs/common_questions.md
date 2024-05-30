@@ -192,3 +192,13 @@ dp = Dispatcher(fsm_strategy=FSMStrategy.CHAT)
 ## How can I handle media groups/albums?
 
 Aiogram doesn't have in-built methods for it, but you can use [aiogram_album](https://github.com/RootShinobi/aiogram_album) utility by an active aiogram community member.
+
+## How to filter "not State"? 
+
+There is an in-built aiogram state filter that you can use for that. 
+
+```python
+from aiogram.filters import StateFilter
+
+@router.message(~StateFilter(UserState))
+```
