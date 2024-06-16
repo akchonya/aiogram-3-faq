@@ -68,13 +68,11 @@ Use default=DefaultBotProperties(...) instead.
   bot = Bot(TOKEN, parse_mode=ParseMode.HTML)
 ```
 
-!!! info "That's not an error *yet*"
-    That's a warning concerning future updates. You still can use `parse_mode=ParseMode.HTML` in the current aiogram 3.4 version. However, it will be removed in the future.
-
-That's what you should use now:
+You've probably tried to use `parse_mode=ParseMode.HTML` directly in a `send_message` or `answer` method. While it was possible the only way to do that in older versions, now you should use default bot properties.
 
 ```python
 from aiogram.client.default import DefaultBotProperties
+from aiogram.enums import ParseMode
 ...
 
 bot = Bot(
@@ -96,6 +94,8 @@ bot = Bot(
 - link_preview_prefer_large_media
 - link_preview_show_above_text
 ```
+
+You still can use `parse_mode=ParseMode.<your_parsemode>` somewhere in your code directly if it differs from your default one.
 
 ## Bad Request: can't parse entities
 
