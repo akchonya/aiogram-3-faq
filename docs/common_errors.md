@@ -63,12 +63,22 @@ Chances are that you are using python 3.12 with an older version of aiogram.
 ## Deprecation Warning
 
 ```python
+TypeError: Passing `parse_mode`, `disable_web_page_preview` or `protect_content` to Bot initializer is not supported anymore. These arguments have been removed in 3.7.0 version. Use `default=DefaultBotProperties(parse_mode=<ParseMode.HTML: 'HTML'>)` argument instead.
+```
+
+You've probably tried to use `parse_mode=ParseMode.HTML` directly while creating a bot instance. While it was possible in older versions, now you should use default bot properties.
+
+or if you don't use the newest version of aiogram you could have got a warning like that:
+
+```python
 DeprecationWarning: Passing parse_mode, disable_web_page_preview or protect_content to Bot initializer is deprecated. This arguments will be removed in 3.7.0 version
 Use default=DefaultBotProperties(...) instead.
   bot = Bot(TOKEN, parse_mode=ParseMode.HTML)
 ```
 
-You've probably tried to use `parse_mode=ParseMode.HTML` directly in a `send_message` or `answer` method. While it was possible the only way to do that in older versions, now you should use default bot properties.
+You've probably tried to use `parse_mode=ParseMode.HTML` directly in a `send_message` or `answer` method.
+
+No matter which version you are using, if you encounter either the error or the warning, you should start using the default bot properties from now on.
 
 ```python
 from aiogram.client.default import DefaultBotProperties
