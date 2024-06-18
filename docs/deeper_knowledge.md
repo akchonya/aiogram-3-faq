@@ -32,6 +32,8 @@ Look into [PostgreSQL](https://www.postgresql.org/) with [SQLAlchemy](https://ww
 
 If you are planning to have scheduled or intervaled tasks you should look into [APScheduler](https://apscheduler.readthedocs.io/en/3.x/).
 
+Check out [this part of Telegram Bot API FAQ](https://core.telegram.org/bots/faq#broadcasting-to-users) before sending messages to all of your users
+
 ## Redis
 
 There is a lot of data in bots' memory storage that could be lost after restarting. To prevent it you should use [Redis](https://redis.io/).
