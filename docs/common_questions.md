@@ -211,4 +211,4 @@ from aiogram.filters import StateFilter
 
 ## Can I use Telegram Stars?
 
-Yes, aiogram fully supports Start payments and you can check out an [example from github](https://github.com/aiogram/aiogram/blob/dev-3.x/examples/stars_invoice.py).
+Yes, aiogram fully supports Stars payments and you can check out an [example from github](https://github.com/aiogram/aiogram/blob/dev-3.x/examples/stars_invoice.py).
