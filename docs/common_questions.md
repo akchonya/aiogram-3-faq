@@ -204,4 +204,11 @@ from aiogram.filters import StateFilter
 
 @router.message(~StateFilter(UserState))
 ```
+
 <sub>*example by* [Stas](https://t.me/plutodis)</sub>
+
+---
+
+## Can I use Telegram Stars?
+
+Yes, aiogram fully supports Start payments and you can check out an [example from github](https://github.com/aiogram/aiogram/blob/dev-3.x/examples/stars_invoice.py).
