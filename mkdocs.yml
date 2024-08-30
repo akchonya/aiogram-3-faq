@@ -62,3 +62,6 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/akchonya
       name: GitHub
+  meta:
+    - name: "google-site-verification"
+      content: "l8Y9vTG_P-ElVlvKL9qb7uGf_jh3aQMC5iBrGT7iuX4"
