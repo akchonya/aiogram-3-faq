@@ -21,6 +21,7 @@ There are some more complex community templates available for you to explore.
 
 [`Latand/tgbot_template_v3`](https://github.com/Latand/tgbot_template_v3)
 [`wakaree/aiogram_bot_template`](https://github.com/wakaree/aiogram_bot_template)
+[`andrew000/aiogram-template`](https://github.com/andrew000/aiogram-template)
 
 ## Databases
 
